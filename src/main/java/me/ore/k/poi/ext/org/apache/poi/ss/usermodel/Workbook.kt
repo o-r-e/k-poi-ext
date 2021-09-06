@@ -14,7 +14,7 @@
  *    limitations under the License.
  */
 
-package r.obuhov.k.poi.ext.org.apache.poi.ss.usermodel
+package me.ore.k.poi.ext.org.apache.poi.ss.usermodel
 
 import org.apache.poi.ss.usermodel.CellStyle
 import org.apache.poi.ss.usermodel.Font

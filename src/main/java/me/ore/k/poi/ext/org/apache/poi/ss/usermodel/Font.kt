@@ -14,13 +14,19 @@
  *    limitations under the License.
  */
 
-package r.obuhov.k.poi.ext
+package me.ore.k.poi.ext.org.apache.poi.ss.usermodel
+
+import org.apache.poi.ss.usermodel.Font
 
 
-interface PoiExcelConst {
-    companion object {
-        const val WIDTH_UNIT_MULTIPLIER = 256
-        const val TEXT_LINE_HEIGHT_MULTIPLIER = 1.4
-        const val CELL_VERTICAL_MARGIN_MULTIPLIER = 0.2
-    }
+fun Font.clone(source: Font) {
+    this.fontName = source.fontName
+    this.fontHeight = source.fontHeight
+    this.italic = source.italic
+    this.strikeout = source.strikeout
+    this.color = source.color
+    this.typeOffset = source.typeOffset
+    this.underline = source.underline
+    this.charSet = source.charSet
+    this.bold = source.bold
 }

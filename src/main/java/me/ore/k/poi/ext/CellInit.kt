@@ -14,7 +14,7 @@
  *    limitations under the License.
  */
 
-package r.obuhov.k.poi.ext
+package me.ore.k.poi.ext
 
 import org.apache.poi.ss.usermodel.*
 import org.apache.poi.ss.util.CellAddress

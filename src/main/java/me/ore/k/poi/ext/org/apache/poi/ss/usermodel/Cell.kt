@@ -14,12 +14,12 @@
  *    limitations under the License.
  */
 
-package r.obuhov.k.poi.ext.org.apache.poi.ss.usermodel
+package me.ore.k.poi.ext.org.apache.poi.ss.usermodel
 
 import org.apache.poi.ss.usermodel.Cell
 import org.apache.poi.ss.usermodel.DataFormatter
 import org.apache.poi.ss.util.CellRangeAddress
-import r.obuhov.k.poi.ext.PoiExcelConst
+import me.ore.k.poi.ext.PoiExcelConst
 import kotlin.math.ceil
 import kotlin.math.floor
 import kotlin.math.max

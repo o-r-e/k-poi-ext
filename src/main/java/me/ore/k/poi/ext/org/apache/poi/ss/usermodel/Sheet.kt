@@ -16,7 +16,7 @@
 
 @file:Suppress("unused")
 
-package r.obuhov.k.poi.ext.org.apache.poi.ss.usermodel
+package me.ore.k.poi.ext.org.apache.poi.ss.usermodel
 
 import org.apache.poi.ss.usermodel.Cell
 import org.apache.poi.ss.usermodel.RichTextString
@@ -24,7 +24,7 @@ import org.apache.poi.ss.usermodel.Row
 import org.apache.poi.ss.usermodel.Sheet
 import org.apache.poi.ss.util.CellAddress
 import org.apache.poi.util.Units
-import r.obuhov.k.poi.ext.CellInit
+import me.ore.k.poi.ext.CellInit
 import java.util.*
 import kotlin.math.roundToInt
 

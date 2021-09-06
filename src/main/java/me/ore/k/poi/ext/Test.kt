@@ -14,11 +14,14 @@
  *    limitations under the License.
  */
 
-package r.obuhov.k.poi.ext
+package me.ore.k.poi.ext
 
-import org.apache.poi.ss.usermodel.*
+import me.ore.k.poi.ext.org.apache.poi.ss.usermodel.*
+import org.apache.poi.ss.usermodel.CellStyle
+import org.apache.poi.ss.usermodel.Font
+import org.apache.poi.ss.usermodel.HorizontalAlignment
+import org.apache.poi.ss.usermodel.VerticalAlignment
 import org.apache.poi.xssf.streaming.SXSSFWorkbook
-import r.obuhov.k.poi.ext.org.apache.poi.ss.usermodel.*
 import java.nio.file.Files
 import java.nio.file.Paths
 
@@ -116,6 +119,8 @@ object Test {
                     sheet.setColumnWidthInPixels("C", 112)
                     sheet.setColumnWidthInPixels("D", 80)
                     for (columnTitle in 'E' .. 'J') {
+                        println(columnTitle + 2)
+
                         sheet.setColumnWidthInPixels(columnTitle.toString(), 97)
                     }
 

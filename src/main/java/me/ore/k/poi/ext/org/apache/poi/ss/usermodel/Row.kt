@@ -16,7 +16,7 @@
 
 @file:Suppress("unused")
 
-package r.obuhov.k.poi.ext.org.apache.poi.ss.usermodel
+package me.ore.k.poi.ext.org.apache.poi.ss.usermodel
 
 import org.apache.poi.ss.usermodel.Cell
 import org.apache.poi.ss.usermodel.RichTextString
