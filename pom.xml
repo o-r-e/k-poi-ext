@@ -7,6 +7,31 @@
     <groupId>me.o-r-e</groupId>
     <artifactId>k-poi-ext</artifactId>
     <version>0.0.2</version>
+    <name>Apache POI extension (Kotlin)</name>
+    <description>Some utility methods and variables for Apache POI (can shorten code), written in Kotlin</description>
+    <url>https://github.com/o-r-e/k-poi-ext</url>
+
+    <scm>
+        <connection>scm:git:git://github.com/o-r-e/k-poi-ext.git</connection>
+        <developerConnection>scm:git:ssh://github.com:o-r-e/k-poi-ext.git</developerConnection>
+        <url>https://github.com/o-r-e/k-poi-ext/tree/master</url>
+    </scm>
+
+    <licenses>
+        <license>
+            <name>The Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Obuhov Roman</name>
+            <email>obuhov.r@gmail.com</email>
+            <organization>Github</organization>
+            <organizationUrl>https://github.com/o-r-e</organizationUrl>
+        </developer>
+    </developers>
 
     <properties>
         <java.target.version>8</java.target.version>
@@ -14,6 +39,7 @@
         <maven.compiler.source>${java.target.version}</maven.compiler.source>
         <maven.compiler.target>${java.target.version}</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <license.dir>${basedir}</license.dir>
 
         <dokka.version>1.5.0</dokka.version>
         <kotlin.version>1.5.30</kotlin.version>
