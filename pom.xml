@@ -40,7 +40,7 @@
         <repository>
             <id>github</id>
             <name>GitHub Obuhov R. Apache Maven Packages</name>
-            <url>https://maven.pkg.github.com/r-obuhov/k-poi-ext</url>
+            <url>https://maven.pkg.github.com/o-r-e/k-poi-ext</url>
         </repository>
     </distributionManagement>
 
