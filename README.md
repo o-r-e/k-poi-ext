@@ -1,5 +1,5 @@
 # k-poi-ext
-Some utility methods and variables for Apache POI (can shorten code)
+Some utility methods and variables for workbooks of Apache POI (can shorten code), written in Kotlin
 
 # How to use with Maven
 
@@ -20,7 +20,7 @@ Some utility methods and variables for Apache POI (can shorten code)
 <dependency>
     <groupId>me.o-r-e</groupId>
     <artifactId>k-poi-ext</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.3-SNAPSHOT</version>
 </dependency>
 ...
 ```
@@ -36,3 +36,8 @@ Some utility methods and variables for Apache POI (can shorten code)
 </dependency>
 ...
 ```
+
+# Example
+
+Now there is only one example - see file
+`src/main/java/me/ore/k/poi/ext/example/KPoiExtSimpleExample.kt` in current repository
