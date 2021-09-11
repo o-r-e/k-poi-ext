@@ -6,7 +6,7 @@
 
     <groupId>me.o-r-e</groupId>
     <artifactId>k-poi-ext</artifactId>
-    <version>0.0.3-SNAPSHOT</version>
+    <version>0.0.3</version>
     <name>Apache POI extension (Kotlin)</name>
     <description>Some utility methods and variables for workbooks of Apache POI (can shorten code), written in Kotlin</description>
     <url>https://github.com/o-r-e/k-poi-ext</url>

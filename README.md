@@ -32,7 +32,7 @@ Some utility methods and variables for workbooks of Apache POI (can shorten code
 <dependency>
     <groupId>me.o-r-e</groupId>
     <artifactId>k-poi-ext</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3</version>
 </dependency>
 ...
 ```
@@ -40,4 +40,4 @@ Some utility methods and variables for workbooks of Apache POI (can shorten code
 # Example
 
 Now there is only one example - see file
-`src/main/java/me/ore/k/poi/ext/example/KPoiExtSimpleExample.kt` in current repository
+[KPoiExtSimpleExample.kt](https://github.com/o-r-e/k-poi-ext/blob/master/src/main/java/me/ore/k/poi/ext/example/KPoiExtSimpleExample.kt)
