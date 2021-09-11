@@ -24,6 +24,24 @@ import org.apache.poi.ss.usermodel.IndexedColors
 
 
 // region Border
+/**
+ * Applies the specified [style] and [color] to the desired borders
+ *
+ * @param style Border style
+ * @param color Border color
+ * @param left If `true`, passes
+ *   [style] to [setBorderLeft()] [CellStyle.setBorderLeft] and
+ *   [color].[index][IndexedColors.index] to [setLeftBorderColor()][CellStyle.setLeftBorderColor]
+ * @param top If `true`, passes
+ *   [style] to [setBorderTop()][CellStyle.setBorderTop] and
+ *   [color].[index][IndexedColors.index] to [setTopBorderColor()][CellStyle.setTopBorderColor]
+ * @param right If `true`, passes
+ *   [style] to [setBorderRight()][CellStyle.setBorderRight] and
+ *   [color].[index][IndexedColors.index] to [setRightBorderColor()][CellStyle.setRightBorderColor]
+ * @param bottom If `true`, passes
+ *   [style] to [setBorderBottom()][CellStyle.setBorderBottom] and
+ *   [color].[index][IndexedColors.index] to [setBottomBorderColor()][CellStyle.setBottomBorderColor]
+ */
 fun CellStyle.border(
     style: BorderStyle = BorderStyle.THIN,
     color: IndexedColors = IndexedColors.AUTOMATIC,
@@ -50,18 +68,42 @@ fun CellStyle.border(
     }
 }
 
+/**
+ * Applies the specified [style] and [color] to the left border (using [border()][border])
+ *
+ * @param style Border style
+ * @param color Border color
+ */
 fun CellStyle.borderLeft(style: BorderStyle = BorderStyle.THIN, color: IndexedColors = IndexedColors.AUTOMATIC) {
     this.border(style, color, top = false, right = false, bottom = false)
 }
 
+/**
+ * Applies the specified [style] and [color] to the top border (using [border()][border])
+ *
+ * @param style Border style
+ * @param color Border color
+ */
 fun CellStyle.borderTop(style: BorderStyle = BorderStyle.THIN, color: IndexedColors = IndexedColors.AUTOMATIC) {
     this.border(style, color, left = false, right = false, bottom = false)
 }
 
+/**
+ * Applies the specified [style] and [color] to the right border (using [border()][border])
+ *
+ * @param style Border style
+ * @param color Border color
+ */
 fun CellStyle.borderRight(style: BorderStyle = BorderStyle.THIN, color: IndexedColors = IndexedColors.AUTOMATIC) {
     this.border(style, color, left = false, top = false, bottom = false)
 }
 
+/**
+ * Applies the specified [style] and [color] to the bottom border (using [border()][border])
+ *
+ * @param style Border style
+ * @param color Border color
+ */
 fun CellStyle.borderBottom(style: BorderStyle = BorderStyle.THIN, color: IndexedColors = IndexedColors.AUTOMATIC) {
     this.border(style, color, left = false, top = false, right = false)
 }

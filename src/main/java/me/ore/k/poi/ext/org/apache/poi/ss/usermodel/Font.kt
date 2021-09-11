@@ -17,8 +17,14 @@
 package me.ore.k.poi.ext.org.apache.poi.ss.usermodel
 
 import org.apache.poi.ss.usermodel.Font
+import org.apache.poi.xssf.usermodel.XSSFFont
 
 
+/**
+ * Copies the settings from [source] to the current font
+ *
+ * @param source Settings source
+ */
 fun Font.clone(source: Font) {
     this.fontName = source.fontName
     this.fontHeight = source.fontHeight
@@ -29,4 +35,9 @@ fun Font.clone(source: Font) {
     this.underline = source.underline
     this.charSet = source.charSet
     this.bold = source.bold
+
+    if ((this is XSSFFont) && (source is XSSFFont)) {
+        this.scheme = source.scheme
+        this.xssfColor.argbHex = source.xssfColor.argbHex
+    }
 }

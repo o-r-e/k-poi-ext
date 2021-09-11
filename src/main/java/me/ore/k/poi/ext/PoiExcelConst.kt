@@ -17,10 +17,24 @@
 package me.ore.k.poi.ext
 
 
+/**
+ * Constants used when working with MS Excel workbooks
+ */
 interface PoiExcelConst {
     companion object {
+        /**
+         * Multiplier for column width (column width is measured in units of "1/256 character width")
+         */
         const val WIDTH_UNIT_MULTIPLIER = 256
+
+        /**
+         * Default text line height
+         */
         const val TEXT_LINE_HEIGHT_MULTIPLIER = 1.4
+
+        /**
+         * Multiplier for calculating vertical margins depending on the font size
+         */
         const val CELL_VERTICAL_MARGIN_MULTIPLIER = 0.2
     }
 }
